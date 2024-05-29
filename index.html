@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras en Tierra de la Fantasía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Aventuras en Tierra de la Fantasía</h1>
+
+    <form id="personaje-form">
+        <input type="hidden" id="personaje-id">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="historia">Historia:</label>
+        <textarea id="historia" name="historia" required></textarea>
+
+        <label for="habilidades">Habilidades Especiales (separadas por comas):</label>
+        <input type="text" id="habilidades" name="habilidades" required>
+
+        <label for="velocidad">Velocidad de Movimiento:</label>
+        <input type="text" id="velocidad" name="velocidad" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <ul id="personajes-list"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
